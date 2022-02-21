@@ -49,9 +49,9 @@ const Formulario = () => {
                             name="categoria"
                             onChange={obtenerDatosReceta}
                         >
-                            {categorias.map(categoria => (
+                            {categorias.map((categoria,index) => (
                                 <option
-                                    key={categoria.strCategory}
+                                    key={`${categoria.strCategory}${index}`}
                                     value={categoria.strCategory}
                                 >
                                     {categoria.strCategory}
